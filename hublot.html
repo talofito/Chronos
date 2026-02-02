@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CHRONOS | Colección Exclusiva</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <style>
+        /* ESTILOS DE LUJO */
+        :root { --bg-color: #0f1115; --card-bg: #161920; --accent-gold: #d4af37; --whatsapp-green: #25D366; --text-main: #e0e0e0; --font-title: 'Playfair Display', serif; --font-body: 'Lato', sans-serif; }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { background-color: var(--bg-color); color: var(--text-main); font-family: var(--font-body); }
+        a { text-decoration: none; color: inherit; }
+
+        .navbar { padding: 20px 5%; display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid rgba(255,255,255,0.1); background: rgba(15,17,21,0.95); position: fixed; width: 100%; top: 0; z-index: 100;}
+        .back-btn { font-size: 0.9rem; text-transform: uppercase; color: #888; transition: 0.3s; }
+        .back-btn:hover { color: var(--accent-gold); }
+        .logo { font-family: var(--font-title); font-size: 1.5rem; color: var(--accent-gold); font-weight: 700; }
+
+        /* HEADER MARCA */
+        .brand-header {
+            height: 50vh;
+            /* CAMBIAR IMAGEN DE FONDO AQUI */
+            background: linear-gradient(to bottom, rgba(0,0,0,0.6), #0f1115), url('https://www.watch-test.com/wp-content/uploads/2024/12/Hublot-Big-Bang-Tourbillon-Carbon-SR_A-by-Samuel-Ross-cover.jpg');
+            background-size: cover; background-position: center;
+            display: flex; flex-direction: column; justify-content: center; align-items: center; margin-top: 60px;
+        }
+        .brand-header h1 { font-family: var(--font-title); font-size: 4rem; color: #fff; text-transform: uppercase; margin-bottom: 10px; }
+        
+        /* GRID PRODUCTOS */
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 40px; padding: 50px 5%; max-width: 1400px; margin: 0 auto; }
+        .card { background: var(--card-bg); border-radius: 8px; overflow: hidden; transition: 0.3s; border: 1px solid rgba(255,255,255,0.05); }
+        .card:hover { transform: translateY(-10px); border-color: var(--accent-gold); }
+        .img-box { height: 350px; width: 100%; overflow: hidden; position: relative; }
+        .img-box img { width: 100%; height: 100%; object-fit: cover; transition: 0.6s; }
+        .card:hover .img-box img { transform: scale(1.1); }
+        .info { padding: 25px; text-align: center; }
+        .info h3 { font-size: 1.2rem; margin-bottom: 5px; color: #fff; }
+        .price { color: var(--accent-gold); font-size: 1.1rem; display: block; margin-top: 10px; font-family: var(--font-title); }
+        
+        /* WHATSAPP SECTION */
+        .contact-section { text-align: center; padding: 80px 20px; border-top: 1px solid rgba(255,255,255,0.1); }
+        .btn-whatsapp {
+            display: inline-flex; align-items: center; gap: 10px; background: var(--whatsapp-green);
+            color: #fff; padding: 15px 30px; border-radius: 50px; font-weight: 700; text-transform: uppercase;
+            transition: 0.3s;
+        }
+        .btn-whatsapp:hover { transform: scale(1.05); background: #1ebc57; box-shadow: 0 0 20px rgba(37,211,102,0.4); }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar">
+        <a href="index.html" class="back-btn"><i class="fas fa-arrow-left"></i> Volver a Marcas</a>
+        <div class="logo">CHRONOS</div>
+        <i class="fas fa-shopping-bag"></i>
+    </nav>
+
+    <header class="brand-header">
+        <h1>HUBLOT</h1> 
+        <p style="color: #ccc; letter-spacing: 2px; text-transform: uppercase;">SI NO ENCUENTRA EL MODELO QUE QUIERE CONTÁCTENOS POR WHATSAPP</p>
+    </header>
+
+    <section class="grid">
+        <div class="card">
+            <div class="img-box">
+                <img src="https://www.perodri.es/wp-content/uploads/Big-Bang-unico-black-magic-44-mm-soldier-shot.png" alt="Reloj">
+            </div>
+            <div class="info">
+                <h3>Big Bang</h3>
+                <span class="price">Consultar Precio</span>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="img-box">
+                <img src="https://www.hublot.com/sites/default/files/styles/watch_item_desktop_1x_scale_no_crop_600_6000_/public/2021-04/CLASSIC-FUSION-TITANIUM-BLUE-ON-RUBBER-38-MM.png?itok=5PhMYCMJ" alt="Reloj">
+            </div>
+            <div class="info">
+                <h3>Classic Fusion</h3>
+                <span class="price">Consultar Precio</span>
+            </div>
+        </div>
+        
+        <div class="card">
+            <div class="img-box">
+                <img src="https://uhrenkauf-auf-raten.ch/wp-content/uploads/2024/05/uhrenkauf-auf-raten.ch-hublot-MP-13-Tourbillon-Bi-Axis-Retrograde-Black-Carbon-913.YT_.1170.RX_.png" alt="Reloj">
+            </div>
+            <div class="info">
+                <h3>MP Collection</h3>
+                <span class="price">Consultar Precio</span>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="img-box">
+                <img src="https://watchxnyc.com/cdn/shop/files/watchxnyc-watch-default-title-hublot-square-bang-unico-magic-gold-42-mm-transparent-dial-polished-18k-magic-gold-rubber-strap-821-mx-0130-rx-31315324108981.png?v=1753988125" alt="Reloj">
+            </div>
+            <div class="info">
+                <h3>Square Bang</h3>
+                <span class="price">Consultar Precio</span>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="img-box">
+                <img src="https://www.hublot.com/sites/default/files/styles/watch_item_desktop_1x_scale_no_crop_600_6000_/public/2021-06/Spirit-of-Big-Bang-White-Ceramic-42-mm-soldier-shot.png?itok=VUyQPT6w" alt="Reloj">
+            </div>
+            <div class="info">
+                <h3>Spirit of Big Bang</h3>
+                <span class="price">Consultar Precio</span>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="img-box">
+                <img src="https://www.hublot.com/sites/default/files/2021-06/big-bang-unico-titanium-42-mm-soldier-shot.png" alt="Reloj">
+            </div>
+            <div class="info">
+                <h3>Big Bang Unico</h3>
+                <span class="price">Consultar Precio</span>
+            </div>
+        </div>
+    </section>
+
+    <div class="contact-section">
+        <p style="margin-bottom: 20px; color: #888;">¿Le interesa algún modelo de esta colección?</p>
+        <a href="https://wa.me/34695701911" class="btn-whatsapp">
+            <i class="fab fa-whatsapp"></i> Solicitar Información
+        </a>
+    </div>
+
+</body>
+</html>
